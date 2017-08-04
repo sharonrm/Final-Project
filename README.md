@@ -14,8 +14,7 @@ https://www.ibm.com/watson/developercloud/personality-insights/api/v2/
 
 # Sample JSON data
 
-`{
-  "document_tone": {
+`
   
     "tone_categories": [
     
