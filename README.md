@@ -10,7 +10,7 @@ Any content can be entered in the app and it will return sentiment results.
 
 # API reference:
 
-[https://www.ibm.com/watson/developercloud/personality-insights/api/v2/]:
+https://www.ibm.com/watson/developercloud/personality-insights/api/v2/:
 
 # User Stories
 
