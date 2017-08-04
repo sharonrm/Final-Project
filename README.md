@@ -16,9 +16,9 @@ Any content can be entered in the app and it will return sentiment results.
 
 `"I'm a terrible writer and wish I could get feedback on my emails before I hit send"`
 
-`"I'd love to get another opinion before I send emails and wish there was an app so I didn't have to bother my sister"`
+`"trying to make my sister feel guilty but not sure if this email really has enough condemnation"`
 
-`"Before I send this break up letter I'd like to know if it too harsh, wish there was an app for that"`
+`"Before I send this break up letter I'd like to know if it's too harsh, wish there was an app for that"`
 
 
 
