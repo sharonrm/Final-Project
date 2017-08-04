@@ -22,7 +22,7 @@ User Stories
 
 <h1 align="center"> Wireframes  </h1>
         
-        (http://imgur.com/FFlEOJ7)
+        
 [Imgur](http://i.imgur.com/ju1HNdW.png)
 [Imgur](http://i.imgur.com/htJEivm.png)
 [Imgur](http://i.imgur.com/rdRjusn.png)
@@ -30,3 +30,4 @@ User Stories
 [Imgur](http://i.imgur.com/FFlEOJ7.png)
 
 
+[](http://i.imgur.com/FFlEOJ7.png)
