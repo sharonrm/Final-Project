@@ -16,23 +16,41 @@ https://www.ibm.com/watson/developercloud/personality-insights/api/v2/
 
 `{
   "document_tone": {
+  
     "tone_categories": [
+    
       {
+      
         "tones": [
+        
           {
+          
             "score": 0.425323,
+            
             "tone_id": "anger",
+            
             "tone_name": "Anger"
+            
           },
+          
           {
+          
             "score": 0.053921,
+            
             "tone_id": "disgust",
+            
             "tone_name": "Disgust"
+            
           },
+          
           {
+          
             "score": 0.423818,
+            
             "tone_id": "fear",
+            
             "tone_name": "Fear"
+            
           },`
 
 # User Stories
