@@ -12,6 +12,29 @@ Any content can be entered in the app and it will return sentiment results.
 
 https://www.ibm.com/watson/developercloud/personality-insights/api/v2/
 
+# Sample JSON data
+
+`{
+  "document_tone": {
+    "tone_categories": [
+      {
+        "tones": [
+          {
+            "score": 0.425323,
+            "tone_id": "anger",
+            "tone_name": "Anger"
+          },
+          {
+            "score": 0.053921,
+            "tone_id": "disgust",
+            "tone_name": "Disgust"
+          },
+          {
+            "score": 0.423818,
+            "tone_id": "fear",
+            "tone_name": "Fear"
+          },`
+
 # User Stories
 
 `"I'm a terrible writer and wish I could get feedback on my emails before I hit send"`
