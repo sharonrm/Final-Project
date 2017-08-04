@@ -1,6 +1,6 @@
 <h1 align="center"> Final-Project </h1>
 
-![](https://www.media.giphy.com/media/l0ExrZB61bmPMRQxW/giphy.gif)
+![](https://media.giphy.com/media/l0ExrZB61bmPMRQxW/giphy-downsized-small.gif)
 
 
 This application is primarily to help clients with an ecommerce presence to study their content using Watson tone analyzer and googles SEOlytics API in order to improve their online visibility.
