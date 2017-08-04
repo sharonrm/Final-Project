@@ -26,7 +26,7 @@ Any content can be entered in the app and it will return sentiment results.
 
 <h2 align="center"> Login  </h2> 
  
-![](http://i.imgur.com/htJEivm.png)
+![](http://i.imgur.com/hatCEZq.png)
         
  <h2 align="center"> Sign Up  </h2> 
   
