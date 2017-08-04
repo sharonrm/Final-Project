@@ -22,15 +22,20 @@ User Stories
 
 <h1 align="center"> Wireframes  </h1>
         
-  <h2 align="center"> Sign Up  </h2>      
+  <h2 align="center"> Sign Up  </h2> 
+  
 ![](http://i.imgur.com/ju1HNdW.png)
- <h2 align="center"> Login  </h2>  
+ <h2 align="center"> Login  </h2> 
+ 
 ![](http://i.imgur.com/htJEivm.png)
- <h2 align="center"> Profile  </h2>  
+ <h2 align="center"> Profile  </h2> 
+ 
 ![](http://i.imgur.com/rdRjusn.png)
- <h2 align="center"> Sign Up  </h2>  
+ <h2 align="center"> Sign Up  </h2> 
+ 
 ![](http://i.imgur.com/eHHd6mw.png)
- <h2 align="center"> Sign Up  </h2>  
+ <h2 align="center"> Sign Up  </h2> 
+ 
 ![](http://i.imgur.com/FFlEOJ7.png)
 
 
