@@ -12,7 +12,7 @@ Any content can be entered in the app and it will return sentiment results.
 
 [The IBM Watson™ Personality Insights]: (https://www.ibm.com/watson/developercloud/personality-insights/api/v2/)
 
-User Stories
+#User Stories
 
 `"I'm a terrible writer and wish I could get feedback on my emails before I hit send"`
 
