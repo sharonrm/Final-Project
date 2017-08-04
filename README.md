@@ -24,10 +24,10 @@ User Stories
         
         
 ![](http://i.imgur.com/ju1HNdW.png)
-[Imgur](http://i.imgur.com/htJEivm.png)
-[Imgur](http://i.imgur.com/rdRjusn.png)
-[Imgur](http://i.imgur.com/eHHd6mw.png)
-[Imgur](http://i.imgur.com/FFlEOJ7.png)
+![](http://i.imgur.com/htJEivm.png)
+![](http://i.imgur.com/rdRjusn.png)
+![](http://i.imgur.com/eHHd6mw.png)
+![](http://i.imgur.com/FFlEOJ7.png)
 
 
 
