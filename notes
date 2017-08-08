@@ -1,0 +1,34 @@
+{
+  "url": "https://gateway.watsonplatform.net/tone-analyzer/api",
+  "username": "9f1e1a4f-404c-427a-b014-37136a90e21c",
+  "password": "4yVnPfKQ1N3r"
+}
+
+rails server -p 8080
+
+==============================================================================================================
+class WatsonsController < ApplicationController
+	include HTTParty
+
+
+  def get_tones(text)
+    new_text = swap_space(text)
+
+    parse(HTTParty.get("https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2016-05-1919&text=#{new_text}",
+                        basic_auth: { username: ENV['WATSON_USERNAME'], password: ENV['WATSON_PASSWORD'] }
+                        ))[:document_tone][:tone_categories]
+
+  end
+
+  private
+
+  def swap_space(words)
+    words.gsub(/[^a-zA-Z0-9\s.?!]/,"")
+  end
+
+  def parse(response)
+    JSON.parse(response.body, symbolize_names: true)
+  end
+
+end
+
