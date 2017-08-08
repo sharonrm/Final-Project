@@ -1,9 +1,9 @@
-DROP TABLE IF EXIST tones;
+DROP TABLE IF EXISTS tones;
 
 CREATE TABLE tones(
 id SERIAL PRIMARY KEY,
 score DECIMAL,
-tone_name VARCHAR,
+tone_name VARCHAR
 );
 
 INSERT INTO tones (score, tone_name) VALUES
@@ -50,12 +50,12 @@ INSERT INTO tones (score, tone_name) VALUES
 (
 	0.893251,
 	'Extraversion'
-)
+),
 (
-	0.893251,
+	0.669156,
 	'Agreeableness'
 ),
 (
 	0.68995,
 	'Emotional Range'
-);
+)

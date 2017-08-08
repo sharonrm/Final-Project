@@ -13,15 +13,15 @@ const express = require('express'),
     axios = require('axios'),
     ToneAnalyzerV3 = require('watson-developer-cloud/tone-analyzer/v3');
 
-
-const isDev = app.get('env') === 'development';
-app.get(
-  '/bundle.js',
-  expressBrowserify('public/client.js', {
-    watch: isDev,
-    debug: isDev
-  })
-);
+//code came from github
+// const isDev = app.get('env') === 'development';
+// app.get(
+//   '/bundle.js',
+//   expressBrowserify('public/client.js', {
+//     watch: isDev,
+//     debug: isDev
+//   })
+// );
 
 
 // 1. set up the view engines
@@ -73,41 +73,6 @@ const getWatsonTone = (inputEmail) => {
 
 getWatsonTone(emailStuff);
 
-
-// For local development, specify the username and password or set env properties
-// const ltAuthService = new watson.AuthorizationV1({
-//   username: process.env.SERVICE_NAME_USERNAME || 'efb6eaff-4a08-4e24-b5b1-9eb6e3da9fd8',
-//   password: process.env.SERVICE_NAME_PASSWORD || 'oP5YW0t5iYcG',
-//   url: watson.ToneAnalyzerV3.URL
-// });
-
-// app.get('/api/token/tone_analyzer', function(req, res) {
-//   ltAuthService.getToken(function(err, token) {
-//     if (err) {
-//       console.log('Error retrieving token: ', err);
-//       return res.status(500).send('Error retrieving token');
-//     }
-//     res.send(token);
-//   });
-// });
-     
-
-// axios({
-//   method: 'post',
-//   url: 'https://gateway.watsonplatform.net/tone-analyzer/api/v3/tone?version=2016-05-19&sentences=false',
-//   headers: {
-//     "Content-Type": "application/json",
-//     "Authorization": "Basic MzE3N2U3YzAtMDU2Yi00YzExLThiYjYtNzgxNGJiNzAwNmRkOldiNTNKRlFYV052Zg=="
-//   },
-//   data: {
-//     "text":"How many of us can say we wore our wedding dress, after our wedding? Creating deliberate pieces that work harmoniously with the fluctuations your wardrobe has to deal with is the type of slow fashion we believe in."
-//   }
-// }).then((response) => {
-//   console.log('!!!!!!!')
-//   console.log(response.data)
-// }).catch((err) => {
-//   console.log(err)
-// })
   
 
 // // 4. listen
