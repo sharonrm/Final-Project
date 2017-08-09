@@ -1,15 +1,9 @@
 const router = require('express').Router(),
-	  Tone = require('../models/tone');
+	  Tone = require('../models/tone'),
+	  getWatsonTone = require('../models/watson_api');
 
-	  router.post('/', (req, res) => {
-	  	console.log('from controller' , req.body);
-	  	const {score, tone_name} = req.body
-	 	Tone.create(score, tone_name)
-	  	  .then((data) => {
-	  	  	res.json(data);
-	  	  })
-	  	  .catch(err => console.log('controller post err: ', err));
-	 });
+
+router.post('/', getWatsonTone);
 
 
 	  router.get('/', (req, res) => {

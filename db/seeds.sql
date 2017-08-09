@@ -1,4 +1,5 @@
 DROP TABLE IF EXISTS tones;
+DROP TABLE If EXISTS content;
 
 CREATE TABLE tones(
 id SERIAL PRIMARY KEY,
@@ -59,3 +60,8 @@ INSERT INTO tones (score, tone_name) VALUES
 	0.68995,
 	'Emotional Range'
 )
+
+CREATE TABLE contents (
+id SERIAL PRIMARY KEY,
+content
+);
