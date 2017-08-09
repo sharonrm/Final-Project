@@ -12,9 +12,8 @@ function getWatsonTone(req, res){
 
   var params = {
       // Get the text from the JSON file.
-      text: req.body.contentValue,
-      tones: 'emotion'
-  };
+      text: req.body.contentValue
+    };
 
   return tone_analyzer.tone(params, (error, response) => {
 
@@ -22,6 +21,7 @@ function getWatsonTone(req, res){
       
       //this is sending the response as an object back to front end
       res.json({ response });
+      console.log({response})
   });
 
 }

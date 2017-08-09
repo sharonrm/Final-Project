@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import axios from 'axios';
+import Results from './Results'
 
 class Content extends Component {
 	constructor (props) {
@@ -19,10 +20,11 @@ class Content extends Component {
 		axios.post('http://localhost:8080/api', {
 			contentValue: this.state.contentValue
 		}).then((response)=> {
-			console.log(response)
+			// console.log(response.data.response.document_tone.tone_categories["0"].tones)
 
 			// setState
-			this.setState({ data: response });
+			this.setState({ data: response.data.response.document_tone.tone_categories["0"].tones });
+			// console.log(this.state.data)
 		}).catch((error)=> {
 			console.log('err while posting: ', error);
 		})
@@ -42,16 +44,20 @@ class Content extends Component {
 	
 	render() {
 		return(
-			<div>
-			<form onSubmit={this.handleSubmit.bind(this)}>
-				<label>
+			<div className='container'>
+			<div className='space'>
+			<form onSubmit={this.handleSubmit.bind(this)} id="usrform">
+				<label className='content'>
 				<input
 				    type="text" name="content"
 					value={this.state.contentValue}
 					onChange={this.handleContentChange.bind(this)}/>
 					</label>
-					<input type="submit" value="submit" />
+					<input type="submit" value="submit" maxlength="20" />
 			</form>
+			
+			<Results responseData={this.state.data} />
+			</div>
 			</div>
 		)
 	}

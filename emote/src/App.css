@@ -1,24 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 .App {
   text-align: center;
 }
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.container {
+/*  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 40vh;
+  margin: 50px;*/
 }
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+label {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+form {
+/*   display: flex;
+  justify-content: center;
+  align-items: center;*/
 }
+input {
+  width: 600px;
+  height: 600px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+    word-wrap: break-word;
+    word-break: break-word;
 
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
 }
