@@ -4,12 +4,30 @@ import axios from 'axios';
 import Results from './Results';
 import Nav from './Nav';
 import Emotion from './Emotion';
+// import Chart from './Chart'
+
 
 
 class Content extends Component {
 	constructor (props) {
 		super(props);
 			this.state = {
+				chartData:{
+					labels:["Anger", "Disgust", "Fear", "Joy", "Sadness"],
+					datasets: [ 
+					{
+						label: "Tone Analysis",
+						data: [20,10,30,35,5],
+						backgroundColor:[
+						"F20530",
+						"F25C78",
+						"9FE4F2",
+						"4FD4E1",
+						"4FD4E1"]
+
+						}
+					]
+				},
 				contentValue: "",
 				data: [],
 				url: 'http://localhost:8080/api',
@@ -121,8 +139,8 @@ class Content extends Component {
 	   }
 
 	   renderView() {
-	   	console.log(this.state.mode)
-	   	console.log(this.state.current)
+	   	// console.log(this.state.mode)
+	   	// console.log(this.state.current)
 	   	if(this.state.mode === 'emotion') {
 	   		return(<Emotion emotion={this.state.current} />)
 	   	} else if (this.state.mode==='analysis'){ 
@@ -147,14 +165,18 @@ class Content extends Component {
 					value={this.state.contentValue}
 					onChange={this.handleContentChange.bind(this)}/>
 					</label>
-					<input type="submit" value="submit" />
+					<div className="containerSubmit">
+					<div className="submit">
+					<input type="submit" value="submit" id="submit" />
+					</div>
+					</div>
 			</form>
 			<Results responseData={this.state.data} key={this.state.data.length + 1}
 					 // setEmotion={this.setEmotion.bind(this)}
 					 save={this.save.bind(this)}
 					 />
 				<div onClick={() => {this.seeResult()}}> View Saved </div>
-				
+		
 			</div>
 			</div>
 		)

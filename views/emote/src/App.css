@@ -12,7 +12,7 @@
   margin: 50px;*/
 }
 label {
-   display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
  }
@@ -21,6 +21,26 @@ form {
   justify-content: center;
   align-items: center;*/
 }
+input#submit{
+  background:none;
+  border:none;
+  font-size:1em;
+
+}
+.containerSubmit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.submit {
+  height: 30px;
+  width:60px;
+  border: solid 1px;
+  border-color: black;
+  text-align: center;
+}
+
 textarea {
   width: 600px;
   height: 100px;
