@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+.App {
+  text-align: center;
+}
+.container {
+/*  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50vw;
+  height: 40vh;
+  margin: 50px;*/
+}
+label {
+   display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+form {
+/*   display: flex;
+  justify-content: center;
+  align-items: center;*/
+}
+textarea {
+  width: 600px;
+  height: 100px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+    word-wrap: break-word;
+    word-break: break-word;
+
+}
