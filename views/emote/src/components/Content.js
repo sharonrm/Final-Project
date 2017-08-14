@@ -148,6 +148,11 @@ class Content extends Component {
 	   				{this.renderSummationofSearch()}
 	   				</div>
 	   			)
+	   		}else if(this.state.mode==='results'){
+	   			return(<div>
+	   			{this.save()}
+	   			</div>
+	   			)
 	   		}
 	   }
 
@@ -155,8 +160,6 @@ class Content extends Component {
 	render() {
 		return(
 			<div className='container'>
-			<div className='space'>
-			<Nav changeMode = {this.changeMode.bind(this)} />
 			{this.renderView()}
 			<form onSubmit={this.handleSubmit.bind(this)} id="usrform">
 				<label className='content'>
@@ -167,18 +170,19 @@ class Content extends Component {
 					</label>
 					<div className="containerSubmit">
 					<div className="submit">
-					<input type="submit" value="submit" id="submit" />
-					</div>
-					</div>
-			</form>
-			<Results responseData={this.state.data} key={this.state.data.length + 1}
+					<input type="submit" value="Submit" id="submit" className="left" />
+					<div className="results-right" onClick={() => {this.seeResult()}}> View Saved </div>
+						<Results responseData={this.state.data} key={this.state.data.length + 1}
 					 // setEmotion={this.setEmotion.bind(this)}
-					 save={this.save.bind(this)}
-					 />
-				<div onClick={() => {this.seeResult()}}> View Saved </div>
-		
-			</div>
-			</div>
+					 	save={this.save.bind(this)}
+					 	/>
+					</div>
+					</div>
+				
+				</form>
+				<Nav changeMode = {this.changeMode.bind(this)} />
+				</div>
+			
 		)
 	}
 }

@@ -2,14 +2,31 @@
 
 .App {
   text-align: center;
+  background-image: url(.)
+
+}
+
+h1 {
+margin-top: 100px;
+margin-left: 70px;
 }
 .container {
-/*  display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 50vw;
+  width: 100vw;
   height: 40vh;
-  margin: 50px;*/
+  margin: 50px;
+}
+#usrform{
+  width: 100vw;
+  align-self: center;
+}
+textarea {
+  width: 600px;
+  height: 100px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
 }
 label {
   display: flex;
@@ -32,21 +49,53 @@ input#submit{
   justify-content: center;
   align-items: center;
   margin-top: 30px;
+  height: 100px;
+  width: 100vw;
+  flex-direction: row;
 }
 .submit {
-  height: 30px;
-  width:60px;
+  height: 23px;
+  width:  100px;
   border: solid 1px;
   border-color: black;
   text-align: center;
+  align-self: flex-start;
+  margin-top: 50px;
+  padding-top: 10px;
+  margin-right: 100px
+}
+.results-right{
+  height: 23px;
+  width:  100px;
+  border: solid 1px;
+  border-color: black;
+  text-align: center;
+  padding-top: 10px;
+  margin-left: 125px; 
+  margin-top: -33px
+}
+/*.container-results{
+  padding-top: 10px;
+  display: flex;
+  margin-bottom: 50px;
+  justify-content: flex-start;
+  text-align: center;
+  border: solid 1px;
+  height: 120px;
+  width: 275px;
+}*/
+button{
+  background:none;
+  border:none;
+  font-size:1em;
+  height: 25px;
+  width:  70px;
+  border: solid 1px;
+  border-color: black;
+  text-align: center;
+
 }
 
-textarea {
-  width: 600px;
-  height: 100px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 20px;
-    word-wrap: break-word;
-    word-break: break-word;
 
-}
+
+

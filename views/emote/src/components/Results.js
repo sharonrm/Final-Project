@@ -13,14 +13,17 @@ class Results extends Component {
 		})
 		// console.log("RESPONSE", responseData)
 		//made a key using length!!love it!!
-		saved.push(<div><button key={saved.id} onClick={this.props.save}>Save</button></div>)
+		saved.push(<div className="button"><button key={saved.id} onClick={this.props.save}>Save</button></div>)
 		return saved;
 	}
 }
 	render() {
 		return(
+
+				<div>
 				<div>
 					{this.renderResults(this.props.responseData)}
+				</div>
 				</div>
 			)
 	}
